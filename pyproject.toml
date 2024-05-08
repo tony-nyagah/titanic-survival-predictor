@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "titanic-survival-predictor"
+version = "0.1.0"
+description = "A simple project that predicts whether you would survive the Titanic."
+authors = ["Antony Nyagah <tony.m.nyagah@gmail.com>"]
+readme = "README.md"
+packages = [{include = "titanic_survival_predictor"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pandas = "^2.2.2"
+numpy = "^1.26.4"
+scikit-learn = "^1.4.2"
+fastapi = "^0.111.0"
+jupyterlab = "^4.2.0"
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.4.2"
+ruff = "^0.4.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
